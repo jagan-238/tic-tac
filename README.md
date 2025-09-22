@@ -2,7 +2,7 @@
 # Tic Tac Toe Game (Player vs Computer)
 
 ## Description
-This is a web-based Tic Tac Toe game where a player competes against the computer. The game features a full user interface with **signup and login pages**, a **rules page**, and a **game board page**. It has a responsive design, interactive gameplay, and a beautiful sunrise-inspired background with floating spark bits.
+This is a web-based Tic Tac Toe game where a player competes against the computer. The game features a full user interface with **signup and login pages**, a **rules page**, and a **game board page**. It has a responsive design, interactive gameplay.
 
 Players can track **scores** for wins, losses, and draws. The game starts after user authentication and provides clear game rules, tips, and objectives.  
 
