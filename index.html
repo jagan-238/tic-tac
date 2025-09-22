@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tic Tac Toe Game</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- SIGNUP PAGE -->
+<section id="signupPage" class="page">
+  <nav class="navbar"><h2>Tic Tac Toe</h2></nav>
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Please Signup for the Game!</h1>
+      <p>Enter your details to start playing Tic Tac Toe vs Computer.</p>
+    </div>
+  </div>
+  <div class="container form-container">
+    <input type="text" id="signupName" placeholder="Your Name">
+    <input type="email" id="signupEmail" placeholder="Email">
+    <input type="password" id="signupPass" placeholder="Password">
+    <button id="signupBtn">Signup</button>
+    <p>Already have account? <a href="#" id="toLogin">Login</a></p>
+  </div>
+</section>
+
+<!-- LOGIN PAGE -->
+<section id="loginPage" class="page hidden">
+  <nav class="navbar"><h2>Tic Tac Toe</h2></nav>
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Login to Continue!</h1>
+      <p>Enter your credentials to access the game.</p>
+    </div>
+  </div>
+  <div class="container form-container">
+    <input type="email" id="loginEmail" placeholder="Email">
+    <input type="password" id="loginPass" placeholder="Password">
+    <button id="loginBtn">Login</button>
+    <p>Don't have account? <a href="#" id="toSignup">Signup</a></p>
+  </div>
+</section>
+
+<!-- RULES PAGE -->
+<section id="rulesPage" class="page hidden">
+  <nav class="navbar"><h2>Tic Tac Toe</h2></nav>
+  <div class="rules-hero">
+    <h1>Game Rules</h1>
+    <p>Learn how to play Tic Tac Toe before starting the game!</p>
+  </div>
+  <div class="rules-content">
+
+    <!-- Objective Section -->
+    <div class="section">
+      <h2>Objective</h2>
+      <p>Align 3 of your symbols (X) horizontally, vertically, or diagonally before the computer (O) does.</p>
+    </div>
+
+    <!-- Rules Section in 3x3 grid -->
+    <div class="section">
+      <h2>Rules</h2>
+      <div class="grid-container">
+        <div class="grid-item">Player is X, Computer is O.</div>
+        <div class="grid-item">Player moves first.</div>
+        <div class="grid-item">Click on an empty cell to place your X.</div>
+        <div class="grid-item">Computer will automatically make its move after you.</div>
+        <div class="grid-item">If all cells are filled without a winner, the game is a draw.</div>
+        <div class="grid-item">Score is tracked for wins, losses, and draws.</div>
+        <div class="grid-item">Try to block the computer from forming 3 in a row.</div>
+        <div class="grid-item">Start in the center or corners for a better chance to win.</div>
+        <div class="grid-item">Have fun and try different strategies!</div>
+      </div>
+    </div>
+
+    <!-- Start Game Button -->
+    <div class="section">
+      <button id="startGameBtn">Start Game</button>
+    </div>
+    
+  </div>
+</section>
+
+<!-- GAME PAGE -->
+<section id="gamePage" class="page hidden">
+  <nav class="navbar"><h2>Tic Tac Toe</h2></nav>
+  <div class="game-hero">
+    <h1>Play Now!</h1>
+    <p>Beat the computer and increase your score!</p>
+  </div>
+  <div class="container game-container">
+    <div id="board"></div>
+    <div id="status">Your Turn</div>
+    <div id="score">Player: 0 | Computer: 0 | Draw: 0</div>
+    <button id="resetGameBtn">Reset Game</button>
+  </div>
+</section>
+
+<script type="module" src="js/firebase-config.js"></script>
+<script type="module" src="js/ui.js"></script>
+<script type="module" src="js/game.js"></script>
+<script type="module" src="js/auth.js"></script>
+
+</body>
+</html>
